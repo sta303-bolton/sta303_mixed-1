@@ -210,6 +210,13 @@ You're interested in presenting your work at the next Federation Science and Inn
 Below are several models that you've fit and some tests on them.
 
 ```{r}
+# You can ignore this line, it is just to set things up so 
+# you hopefully don't get a convergence error.
+# If you do, don't worry about it if the model parameters are estimated.
+lmerControl(optCtrl=list(xtol_abs=1e-8, 
+                         ftol_abs=1e-8, 
+                         optimizer = "Nelder_Mead"))
+
 model_1a <- lmer(productivity ~ week + starfleet_gpa + perseverance_score +
                    (1|name), 
                  data = crew_data)
