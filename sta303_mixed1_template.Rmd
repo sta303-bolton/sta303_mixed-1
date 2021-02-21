@@ -42,7 +42,7 @@ Note: This component is ungraded BUT there is a 10-percentage point penalty for 
 
 If you are working on this on the Jupyter Hub, the `tidyverse`, `devtools`, `lme4`, `lattice` and `lmtest` packages will already be installed. If you're working locally, you'll have to install them first if they are not already installed. You will also need to install the `randomNames` package and the `myStarship` package from GitHub. All the code you need to do this is in the `setup` chunk below.
 
-```{r, setup, eval=FALSE}
+```{r, setup, eval=FALSE, message=FALSE}
 # RUN THIS CHUNK FIRST! You should only need to run it once on your local machine.
 # On the JupyterHub, you may need to run it at the beginning of each new session.
 
